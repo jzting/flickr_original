@@ -1,0 +1,8 @@
+content/overlay.js
+content/overlay.xul
+locale/.DS_Store
+locale/en-US/flickr.dtd
+locale/en-US/flickr.properties
+
+install.rdf
+chrome.manifest

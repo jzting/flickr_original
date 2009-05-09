@@ -1,0 +1,4 @@
+content	flickr	content/
+locale	flickr	en-US	locale/en-US/
+skin	flickr	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://flickr/content/overlay.xul

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://flickr/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://flickr/locale/flickr.dtd">
+<overlay id="flickr-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+	<script type="application/x-javascript">
+	window.addEventListener("load", com.jzlabs.flickr_original.init, false);
+	window.addEventListener("popupshowing", com.jzlabs.flickr_original.showHide, false);					
+	</script>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="flickr-strings" src="chrome://flickr/locale/flickr.properties"/>
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+  <menuitem id="context-flickr2" label="&flickrContext.label2;"
+            accesskey="&flickrContext.accesskey;"
+            insertbefore="context-viewimage"
+						oncommand="com.jzlabs.flickr_original.flickrIt(this, 1);"/>
+    <menuitem id="context-flickr" label="&flickrContext.label;"
+              accesskey="&flickrContext.accesskey;"
+              insertbefore="context-viewimage"
+							oncommand="com.jzlabs.flickr_original.flickrIt(this, 0);"/>  						                                  
+  </popup>
+</overlay>
